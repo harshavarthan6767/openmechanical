@@ -1,0 +1,11 @@
+/* OpenFOAM Foundation v14 incompressible constant-property model. */
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      physicalProperties;
+}
+
+viscosityModel  constant;
+nu              2.7777777778e-05;

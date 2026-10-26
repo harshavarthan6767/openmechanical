@@ -1,0 +1,71 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      functions;
+}
+
+#includeFunc wallShearStress
+#includeFunc patchFlowRate(name=inletFlowRate, patch=inlet)
+#includeFunc patchFlowRate(name=outletFlowRate, patch=outlet)
+
+#includeFunc graphUniform
+(
+    name=lowerWallShear,
+    start=(0.05 -0.999 0.005),
+    end=(49.95 -0.999 0.005),
+    nPoints=800,
+    axis=x,
+    wallShearStress
+)
+
+#includeFunc graphUniform
+(
+    name=inletProfile,
+    start=(-4 0 0.005),
+    end=(-4 8 0.005),
+    nPoints=161,
+    axis=y,
+    U
+)
+
+#includeFunc graphUniform
+(
+    name=profileX1,
+    start=(1 -0.9 0.005),
+    end=(1 7.2 0.005),
+    nPoints=163,
+    axis=y,
+    U
+)
+
+#includeFunc graphUniform
+(
+    name=profileX4,
+    start=(4 -0.9 0.005),
+    end=(4 7.2 0.005),
+    nPoints=163,
+    axis=y,
+    U
+)
+
+#includeFunc graphUniform
+(
+    name=profileX6,
+    start=(6 -0.9 0.005),
+    end=(6 7.2 0.005),
+    nPoints=163,
+    axis=y,
+    U
+)
+
+#includeFunc graphUniform
+(
+    name=profileX10,
+    start=(10 -0.9 0.005),
+    end=(10 7.2 0.005),
+    nPoints=163,
+    axis=y,
+    U
+)

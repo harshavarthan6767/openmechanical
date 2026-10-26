@@ -1,0 +1,120 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-a4867fc914c1
+Exec   : blockMesh
+Date   : Oct 26 2026
+Time   : 16:57:38
+Host   : "WIN-VRCNMK5UIE6"
+PID    : 1939
+I/O    : uncollated
+Case   : /root/OpenFOAM/root-14/run/nasa-tmr-backstep-coarse-20261026T165738Z/case
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Basic statistics
+    Number of internal faces : 16
+    Number of boundary faces : 40
+    Number of defined boundary faces : 40
+    Number of undefined boundary faces : 0
+
+Checking topology
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.7 .. 0.7
+        j : 0.009752679295 .. 0.1950535859
+        k : 0.01
+    Block 1 cell size :
+        i : 0.7 .. 0.7
+        j : 0.1950535859 .. 0.009752679295
+        k : 0.01
+    Block 2 cell size :
+        i : 0.5 .. 0.5
+        j : 0.009752679295 .. 0.1950535859
+        k : 0.01
+    Block 3 cell size :
+        i : 0.5 .. 0.5
+        j : 0.1950535859 .. 0.009752679295
+        k : 0.01
+    Block 4 cell size :
+        i : 0.1
+        j : 0.009752679295 .. 0.1950535859
+        k : 0.01
+    Block 5 cell size :
+        i : 0.1
+        j : 0.1950535859 .. 0.009752679295
+        k : 0.01
+    Block 6 cell size :
+        i : 0.05 .. 0.05
+        j : 0.009752679295 .. 0.1950535859
+        k : 0.01
+    Block 7 cell size :
+        i : 0.05 .. 0.05
+        j : 0.1950535859 .. 0.009752679295
+        k : 0.01
+    Block 8 cell size :
+        i : 0.05 .. 0.05
+        j : 0.004824717664 .. 0.09649435328
+        k : 0.01
+    Block 9 cell size :
+        i : 0.125
+        j : 0.009752679295 .. 0.1950535859
+        k : 0.01
+    Block 10 cell size :
+        i : 0.125
+        j : 0.1950535859 .. 0.009752679295
+        k : 0.01
+    Block 11 cell size :
+        i : 0.125
+        j : 0.004824717664 .. 0.09649435328
+        k : 0.01
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-180 -1 0) (50 8 0.01)
+  nPoints: 258578
+  nCells: 128256
+  nFaces: 514056
+  nInternalFaces: 255480
+----------------
+Patches
+----------------
+  patch 0 (start: 255480 size: 128) name: inlet
+  patch 1 (start: 255608 size: 160) name: outlet
+  patch 2 (start: 255768 size: 252) name: upstreamWall
+  patch 3 (start: 256020 size: 520) name: lowerWall
+  patch 4 (start: 256540 size: 32) name: stepWall
+  patch 5 (start: 256572 size: 772) name: topWall
+  patch 6 (start: 257344 size: 200) name: symmetry
+  patch 7 (start: 257544 size: 256512) name: frontAndBack
+
+End
+

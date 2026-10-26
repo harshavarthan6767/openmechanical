@@ -1,0 +1,16 @@
+/* OpenFOAM Foundation v14 turbulence model configuration. */
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      momentumTransport;
+}
+
+simulationType RAS;
+
+RAS
+{
+    model           SpalartAllmaras;
+    turbulence      on;
+}
