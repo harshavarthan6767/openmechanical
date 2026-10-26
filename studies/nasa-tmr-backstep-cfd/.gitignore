@@ -1,9 +1,0 @@
-.court/
-.venv/
-__pycache__/
-*.py[cod]
-dist/
-build/
-runs/
-.research-cache/
-
