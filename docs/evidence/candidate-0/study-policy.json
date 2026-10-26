@@ -1,0 +1,12 @@
+{
+  "mesh_sizes_m": [
+    0.004,
+    0.00282842712474619,
+    0.002
+  ],
+  "displacement_change_tolerance": 0.02,
+  "stress_change_tolerance": 0.05,
+  "roi_volume_error_tolerance": 0.05,
+  "trend_required": "monotonic with decreasing increments",
+  "stress_scope": "predeclared regular-region RMS; global peak is reported but not certified"
+}

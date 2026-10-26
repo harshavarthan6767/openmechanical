@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+runs/**
+!runs/.gitkeep
+*.py[cod]
+dist/
+# Machine-specific build handoff notes remain local.
+/BUILD_PROMPT.md
+/IMPLEMENTATION_PLAN.md
+/docs/progress*.md
+/docs/supported-environment.md
+/docs/decisions.md
+.env
+.env.*
+*.pem
+*.key

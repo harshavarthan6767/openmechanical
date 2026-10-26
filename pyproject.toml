@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openmechanical"
+version = "0.1.0"
+description = "Reproducible, verified mechanical simulation workflows for engineering agents"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = [
+  "cadquery==2.8.0",
+  "gmsh==4.12.1",
+  "matplotlib==3.11.2",
+  "numpy>=2.2,<2.6",
+  "pint==0.26.2",
+  "pydantic==2.14.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<9", "ruff>=0.11,<0.12"]
+
+[project.scripts]
+openmechanical = "openmechanical.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openmechanical"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

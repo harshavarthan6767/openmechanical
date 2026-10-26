@@ -1,0 +1,1212 @@
+{
+  "execution_status": "completed",
+  "design_status": "unassessed",
+  "winner": null,
+  "numerical_status": "passed",
+  "total_force_N": 295.0,
+  "candidates": [
+    {
+      "thickness_mm": 6.0,
+      "verification": {
+        "execution_status": "completed",
+        "numerical_status": "passed",
+        "verification_scope": "equilibrium, geometry, displacement and regular-region stress mesh sensitivity",
+        "design_status": "unassessed",
+        "physical_validation": "not_performed",
+        "displacement_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.005933001937314797,
+            0.0013381664421443574
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.02
+        },
+        "stress_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.00366822039476011,
+            0.0002623711996637919
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.05
+        },
+        "roi_volume_relative_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "global_peak_stress_convergence": "not_assessed; possible clamp singularity",
+        "runs": [
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 7619,
+              "elements": 3839,
+              "minimum_minsicn": 0.11570386341699772,
+              "minimum_jacobian_determinant": 15.22397174285664,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2949.9999999999977,
+              "centroid_mm": [
+                50.500000000000036,
+                25.000000000000043,
+                6.000000000000002
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.9999999999998
+              ],
+              "moment_Nmm": [
+                -7375.000000000007,
+                14897.499999999998,
+                0.0
+              ],
+              "force_assembly_error": 7.707582218414652e-16,
+              "moment_assembly_error": 4.720162618284913e-16,
+              "moment_scale_Nmm": 32982.00266812187
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.002874120676584875,
+                -7.17468276449828e-07,
+                -0.030867369160275854
+              ],
+              "maximum_nodal_displacement_mm": 0.0671527564040491,
+              "support_reaction_N": [
+                7.014311514397242e-07,
+                7.890900039497772e-07,
+                295.0000082949998
+              ],
+              "support_moment_Nmm": [
+                7375.000084403778,
+                -14897.499925688402,
+                0.00034010975700837776
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 0.00012253795317495664,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 24.651130447780876,
+              "peak_element_id": 4261,
+              "peak_integration_point": 3,
+              "roi_rms_von_mises_MPa": 4.097026161029767,
+              "roi_elements": 321,
+              "roi_volume_mm3": 2880.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 2.8345489159234452e-08,
+            "moment_residual_relative": 1.086104473594539e-08,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 2.6461003990000016
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "d4e3a62f2ae6cc93698d839d296a7da4f0d95358c826223a4b27538bdc185171",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "49e2858a5141b45f53810a497ecf0ddb7105a54681d40aaed8c61ad58381d71c",
+              "analysis.frd": "54d37792054d9b31a8caa0d36e47cd6993bbe3c52595a05135623216e9353bbe",
+              "analysis.inp": "e8e0f59a1a98ee6b8e98d49ced59a3c12046da40dc5de4b7723badcf9faa9d4e",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "dc5385d273a0556f40ef1bffd3b9dbf9075d0b91c1a0d5c1fca996e9eace3fe5",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.001722996297218068,
+            "cad_load_area_error": 7.707582218414646e-16,
+            "mass_kg": 0.3345220246949585,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.011192126067341516,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "e6565befb5eea43de36a244bbda61b79b12db1307c7f0103bef13f10c73950e7"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 19512,
+              "elements": 10903,
+              "minimum_minsicn": 0.31089777385181244,
+              "minimum_jacobian_determinant": 4.382008644133471,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2949.999999999997,
+              "centroid_mm": [
+                50.500000000000156,
+                25.000000000000057,
+                6.000000000000012
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.9999999999997
+              ],
+              "moment_Nmm": [
+                -7375.00000000001,
+                14897.500000000031,
+                0.0
+              ],
+              "force_assembly_error": 1.3488268882225643e-15,
+              "moment_assembly_error": 1.2393638821540847e-15,
+              "moment_scale_Nmm": 32982.002668121866
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0028923590801926595,
+                -1.3461168665337299e-09,
+                -0.031051598353463675
+              ],
+              "maximum_nodal_displacement_mm": 0.06749617691551149,
+              "support_reaction_N": [
+                -5.5019239608711246e-08,
+                2.3668787885178233e-07,
+                295.0000043226457
+              ],
+              "support_moment_Nmm": [
+                7375.000089048687,
+                -14897.500006722308,
+                0.00023642039378302115
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 0.00012909008169953006,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 26.567598306879475,
+              "peak_element_id": 11943,
+              "peak_integration_point": 2,
+              "roi_rms_von_mises_MPa": 4.112110287853173,
+              "roi_elements": 896,
+              "roi_volume_mm3": 2880.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 1.4676171807742638e-08,
+            "moment_residual_relative": 7.662484246217166e-09,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 5.748673724999998
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "d4e3a62f2ae6cc93698d839d296a7da4f0d95358c826223a4b27538bdc185171",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "cdb6116a485032d7213d453ca635d97d7ca320b28b6fe3c95343f3016f802f78",
+              "analysis.frd": "c1351f95274904786b063ca1c1cec0c3f0bd749f2457243d7faff3a3cfedf80a",
+              "analysis.inp": "0ef3ade4289e73b8117a3cdcd18c5f8b4bb3788ef2fb345b92bde7f233c2baf5",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "afc2df0a87663af80ff559d33cdb820c4f1e2781be93b87e1d8a8917716514ec",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.000850135949293148,
+            "cad_load_area_error": 1.0790615105780504e-15,
+            "mass_kg": 0.3345220246949585,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.011249362819251915,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "56b7c251929f6eb761bc0063c3c1e4d1694a49ef0194fe40cd601dc910a79b61"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 47696,
+              "elements": 28842,
+              "minimum_minsicn": 0.2988118261418799,
+              "minimum_jacobian_determinant": 2.5080180292783276,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2949.9999999999995,
+              "centroid_mm": [
+                50.50000000000008,
+                25.000000000000018,
+                5.999999999999996
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.99999999999994
+              ],
+              "moment_Nmm": [
+                -7375.000000000004,
+                14897.50000000002,
+                0.0
+              ],
+              "force_assembly_error": 1.926895554603662e-16,
+              "moment_assembly_error": 1.1369663507346238e-15,
+              "moment_scale_Nmm": 32982.00266812189
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.002896121461735747,
+                -1.0484325826834136e-08,
+                -0.031093206238630884
+              ],
+              "maximum_nodal_displacement_mm": 0.06757322817990485,
+              "support_reaction_N": [
+                -3.274521428453525e-07,
+                -3.859576763187711e-07,
+                295.0000073085584
+              ],
+              "support_moment_Nmm": [
+                7375.000196201469,
+                -14897.500078132165,
+                4.232094376277473e-06
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 0.00013820379338782968,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 28.018892026457653,
+              "peak_element_id": 29904,
+              "peak_integration_point": 3,
+              "roi_rms_von_mises_MPa": 4.113189470308942,
+              "roi_elements": 2121,
+              "roi_volume_mm3": 2880.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 2.48341155190415e-08,
+            "moment_residual_relative": 6.404362050176081e-09,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 18.437479985999996
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "d4e3a62f2ae6cc93698d839d296a7da4f0d95358c826223a4b27538bdc185171",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "58757efa94f1eb587e57ea4b4c5f83fb2a0984ec5eee012e3391ba88c61431b2",
+              "analysis.frd": "56393f53c3bd48b429bddbc0a3603fec8f9825dd0b5d52cef5506aacc044036c",
+              "analysis.inp": "88e8fbaeff2341f75ede556ac938f69a9f35d20bfc9fe8f714ee72bd1d3cad86",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "fc3c58a3c934f47507fd50d084846680a845cc433305077025f09ae65cca9beb",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.000439938758193585,
+            "cad_load_area_error": 1.5415164436829293e-16,
+            "mass_kg": 0.3345220246949585,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.01126220469665081,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "f82eed1f1593450e7239279c56254956e1574fb7b8098b5fb326d252ae59ec7c"
+          }
+        ]
+      }
+    },
+    {
+      "thickness_mm": 8.0,
+      "verification": {
+        "execution_status": "completed",
+        "numerical_status": "passed",
+        "verification_scope": "equilibrium, geometry, displacement and regular-region stress mesh sensitivity",
+        "design_status": "unassessed",
+        "physical_validation": "not_performed",
+        "displacement_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.002078310787425429,
+            0.0008718879646440564
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.02
+        },
+        "stress_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.0005006755351042207,
+            0.00019904508449960744
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.05
+        },
+        "roi_volume_relative_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "global_peak_stress_convergence": "not_assessed; possible clamp singularity",
+        "runs": [
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 9716,
+              "elements": 5338,
+              "minimum_minsicn": 0.2937119347541544,
+              "minimum_jacobian_determinant": 14.886590653361562,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2849.9999999999995,
+              "centroid_mm": [
+                51.49999999999998,
+                24.99999999999999,
+                8.0
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.99999999999994
+              ],
+              "moment_Nmm": [
+                -7374.999999999995,
+                15192.49999999999,
+                0.0
+              ],
+              "force_assembly_error": 7.707582218414648e-16,
+              "moment_assembly_error": 1.5599049640450357e-16,
+              "moment_scale_Nmm": 32982.00266812189
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0016565899123264967,
+                4.7431684592423025e-08,
+                -0.01371301626815499
+              ],
+              "maximum_nodal_displacement_mm": 0.028958196739455534,
+              "support_reaction_N": [
+                2.0742914426885584e-05,
+                -6.734600230262622e-07,
+                294.99999746819987
+              ],
+              "support_moment_Nmm": [
+                7374.999933198589,
+                -15192.500072733332,
+                -0.0004138915837152979
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 7.248652646864315e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 14.731020336502171,
+              "peak_element_id": 5468,
+              "peak_integration_point": 3,
+              "roi_rms_von_mises_MPa": 2.4473196736959753,
+              "roi_elements": 454,
+              "roi_volume_mm3": 3840.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 7.087357064450449e-08,
+            "moment_residual_relative": 1.2901280213822933e-08,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 2.713279276999998
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "da0ec68fd3fd76bc9290df871fab80295b541c26ec6d3d3302584415ff341720",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "779729ac19883a9de626dd0d9551d357b7f92ff4a73522b440405c23a9a184a5",
+              "analysis.frd": "3c73123af6eea7dbb89778fed7afff7a136710df72c7cdd7f80699c969d2b75e",
+              "analysis.inp": "8c96032181a96ba914627c4ad7da019f6a76b37852f3c13ad69c317be475d2e5",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "fa1b796136d57c6fabcde28208c8bb99b6873340f65d51607efa977d50b31fbf",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.0013294631524044893,
+            "cad_load_area_error": 1.5956047399525056e-16,
+            "mass_kg": 0.4334320246949586,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0036197745924319417,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "334e75f1a1ff4a55dd676b25c29f0c3142af6db564ce98ceb3ae679a1702cb18"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 22855,
+              "elements": 13386,
+              "minimum_minsicn": 0.2976624685676728,
+              "minimum_jacobian_determinant": 5.402854669619052,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2850.000000000003,
+              "centroid_mm": [
+                51.49999999999989,
+                24.999999999999968,
+                8.0
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -295.00000000000034
+              ],
+              "moment_Nmm": [
+                -7374.999999999999,
+                15192.499999999985,
+                0.0
+              ],
+              "force_assembly_error": 5.780686663810978e-16,
+              "moment_assembly_error": 1.1305948625348706e-15,
+              "moment_scale_Nmm": 32982.00266812194
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0016599216584741274,
+                7.894258284442328e-08,
+                -0.013741575532821073
+              ],
+              "maximum_nodal_displacement_mm": 0.02900990220929677,
+              "support_reaction_N": [
+                1.1517094106849868e-05,
+                1.9376419871930395e-06,
+                295.0000027721094
+              ],
+              "support_moment_Nmm": [
+                7375.000072773323,
+                -15192.50012760966,
+                -0.00031771529901902795
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 7.695069999073306e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 15.517620080678043,
+              "peak_element_id": 14267,
+              "peak_integration_point": 3,
+              "roi_rms_von_mises_MPa": 2.44854560057477,
+              "roi_elements": 1041,
+              "roi_volume_mm3": 3840.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 4.0689617212300645e-08,
+            "moment_residual_relative": 1.0612852716927015e-08,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 7.084161944999998
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "da0ec68fd3fd76bc9290df871fab80295b541c26ec6d3d3302584415ff341720",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "6d1a4b3949e092e0b5ed3bd409943e659dbf46de7a3249287ab76c5ce3f90706",
+              "analysis.frd": "b1119a9d5c7cb71ac6e0405e27f84af80a5fb253325d3880618278405416c992",
+              "analysis.inp": "a4d3370e882661b003d486b913614d0989535c29741f693a047674c437441f9c",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "b09f802c1ea7dc843294bb72d0a7b3640429f0286e1847aad8b16c2094ad6be1",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.0006561327564441367,
+            "cad_load_area_error": 1.116923317966754e-15,
+            "mass_kg": 0.4334320246949586,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0036262377761620964,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "686869e58ada3f1a73c49c556c84dd68e95e89592e43bc67ff102864375569cf"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 55213,
+              "elements": 34311,
+              "minimum_minsicn": 0.2692786191667613,
+              "minimum_jacobian_determinant": 2.476270383431574,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2849.999999999997,
+              "centroid_mm": [
+                51.499999999999936,
+                25.000000000000032,
+                8.0
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.99999999999966
+              ],
+              "moment_Nmm": [
+                -7375.000000000001,
+                15192.499999999964,
+                0.0
+              ],
+              "force_assembly_error": 4.4318597755884266e-15,
+              "moment_assembly_error": 2.757548445207008e-16,
+              "moment_scale_Nmm": 32982.00266812186
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0016613040924877756,
+                -1.1409306562005854e-08,
+                -0.013753567102448622
+              ],
+              "maximum_nodal_displacement_mm": 0.029031279227455086,
+              "support_reaction_N": [
+                6.431879255863748e-07,
+                2.7347994452364688e-08,
+                295.0000001178912
+              ],
+              "support_moment_Nmm": [
+                7375.000019320491,
+                -15192.499978880835,
+                -0.0001257356001715948
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 7.924690862259559e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 16.080857186523485,
+              "peak_element_id": 35547,
+              "peak_integration_point": 1,
+              "roi_rms_von_mises_MPa": 2.4490330685688457,
+              "roi_elements": 2547,
+              "roi_volume_mm3": 3840.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 2.218558056368924e-09,
+            "moment_residual_relative": 3.909782969267892e-09,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 24.182241908
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "da0ec68fd3fd76bc9290df871fab80295b541c26ec6d3d3302584415ff341720",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "7ccfbce09a95618f48b80a62daa7c873724303eec737e0dbefe2aa2bfc8f5327",
+              "analysis.frd": "ce606769f4476a51d99d9db615bb579bc06376aae4fefdaaee59a98ead708a12",
+              "analysis.inp": "ade2ea24b5ef33db6d1f57aeea932ebc4561a5e6d243ca48173acbb647932915",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "60ce45974257feaf1a1527e60f850f9a9a6f36fc7e48e37fb3fb121151b24915",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.0003391814891525325,
+            "cad_load_area_error": 1.116923317966754e-15,
+            "mass_kg": 0.4334320246949586,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0036289099034318858,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "f21e695918af3bf8d048413ea6dccf1b5908cf45dea2011c939d1db577536461"
+          }
+        ]
+      }
+    },
+    {
+      "thickness_mm": 10.0,
+      "verification": {
+        "execution_status": "completed",
+        "numerical_status": "passed",
+        "verification_scope": "equilibrium, geometry, displacement and regular-region stress mesh sensitivity",
+        "design_status": "unassessed",
+        "physical_validation": "not_performed",
+        "displacement_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.0023559260531879882,
+            0.0006810060332477019
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.02
+        },
+        "stress_convergence": {
+          "status": "passed",
+          "relative_changes": [
+            0.00038467544722502027,
+            0.00015416472508971143
+          ],
+          "monotonic": true,
+          "decreasing_increments": true,
+          "tolerance": 0.05
+        },
+        "roi_volume_relative_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "global_peak_stress_convergence": "not_assessed; possible clamp singularity",
+        "runs": [
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 10272,
+              "elements": 5716,
+              "minimum_minsicn": 0.299904025828397,
+              "minimum_jacobian_determinant": 16.32234959941784,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2749.999999999999,
+              "centroid_mm": [
+                52.50000000000005,
+                25.000000000000007,
+                9.999999999999995
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.9999999999999
+              ],
+              "moment_Nmm": [
+                -7374.999999999999,
+                15487.50000000001,
+                0.0
+              ],
+              "force_assembly_error": 5.780686663810987e-16,
+              "moment_assembly_error": 6.821798104407743e-16,
+              "moment_scale_Nmm": 32982.00266812189
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.001074425569666249,
+                -2.06448369983947e-08,
+                -0.007317354830985106
+              ],
+              "maximum_nodal_displacement_mm": 0.015025413482240027,
+              "support_reaction_N": [
+                -1.3205729900989116e-05,
+                -3.391802998964355e-06,
+                294.99999849020026
+              ],
+              "support_moment_Nmm": [
+                7374.999788857485,
+                -15487.499939764344,
+                0.00026940168127609354
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 4.893631916252978e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 9.8460335584287,
+              "peak_element_id": 5597,
+              "peak_integration_point": 1,
+              "roi_rms_von_mises_MPa": 1.6656342489687872,
+              "roi_elements": 484,
+              "roi_volume_mm3": 4800.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 4.650065713907866e-08,
+            "moment_residual_relative": 1.0537380138682885e-08,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 2.8197694690000077
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "1cd3b2844f081b27371b067792b817447a69fbaacd1e0561419515b2abe785dc",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "0930c3a6d8cc769252267654ccbd70c2b80cc6eb9e6c3fa06ccbd08eb9d9128d",
+              "analysis.frd": "abc73c15c6db982b8044a9a125f6029c5b7bd78a070c1bce0aa5e2f8390c0669",
+              "analysis.inp": "d7d07ced3b4baae881c85695572579ad295eb80cd8fa2500fc40940bf7b14963",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "26616440352a8119a1a2423f50c9acb0c8e25ce17b51d4ad1ea28d21f4fc800f",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.0010887487978978978,
+            "cad_load_area_error": 1.6536267304962336e-16,
+            "mass_kg": 0.5292020246949591,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0015025413482240026,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "34a35cdf8653ac306855ab087009b7a6b3e6851df5c4faf356ba7ab7b13f009c"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 25569,
+              "elements": 15414,
+              "minimum_minsicn": 0.2935080583322973,
+              "minimum_jacobian_determinant": 6.190823157632847,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2750.000000000003,
+              "centroid_mm": [
+                52.49999999999997,
+                24.99999999999995,
+                10.000000000000005
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -295.00000000000034
+              ],
+              "moment_Nmm": [
+                -7374.999999999994,
+                15487.50000000001,
+                0.0
+              ],
+              "force_assembly_error": 1.1561373327621956e-15,
+              "moment_assembly_error": 9.375664713703804e-16,
+              "moment_scale_Nmm": 32982.00266812194
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0010771422171730696,
+                2.4705668793004305e-08,
+                -0.007334634687937033
+              ],
+              "maximum_nodal_displacement_mm": 0.015055965934425491,
+              "support_reaction_N": [
+                1.4201989659845538e-06,
+                2.246971988362212e-06,
+                295.0000024321501
+              ],
+              "support_moment_Nmm": [
+                7375.000088250165,
+                -15487.49991199439,
+                -8.669192621368893e-05
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 5.140027562894369e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 10.341211639104566,
+              "peak_element_id": 14801,
+              "peak_integration_point": 2,
+              "roi_rms_von_mises_MPa": 1.6662752241358316,
+              "roi_elements": 1216,
+              "roi_volume_mm3": 4800.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 1.2213367228406852e-08,
+            "moment_residual_relative": 4.603042542739697e-09,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 9.325222491999995
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "1cd3b2844f081b27371b067792b817447a69fbaacd1e0561419515b2abe785dc",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "d2377d49a3f4d735c37451bbccd35351e55be5bd65f6310801866d4a2050fe97",
+              "analysis.frd": "b97197d299cb9a166fd2336627396ef8b4454092ccb4a3c206bd5cb0a8a50cd9",
+              "analysis.inp": "9a574d3700a058b318ea2f88b4222787ab96d5b3ddc6496313cadf8cf4cc808e",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "fdbfe675ac268c2a1110407914beeef0fbccb46f291647b09875be3ae5345aea",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.000531612887322932,
+            "cad_load_area_error": 1.3229013843969868e-15,
+            "mass_kg": 0.5292020246949591,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0015055965934425491,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "73eea2094f73bb9094316ee5fd61adbbb864a7a99ddef62439cb5dc32c9c426e"
+          },
+          {
+            "execution_status": "completed",
+            "numerical_status": "incomplete",
+            "design_status": "unassessed",
+            "physical_validation": "not_performed",
+            "mesh": {
+              "nodes": 65062,
+              "elements": 41662,
+              "minimum_minsicn": 0.29611205507038724,
+              "minimum_jacobian_determinant": 2.451732251618662,
+              "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+            },
+            "load": {
+              "area_mm2": 2749.999999999999,
+              "centroid_mm": [
+                52.499999999999915,
+                24.999999999999996,
+                10.000000000000005
+              ],
+              "force_N": [
+                0.0,
+                0.0,
+                -294.9999999999999
+              ],
+              "moment_Nmm": [
+                -7374.999999999996,
+                15487.499999999969,
+                0.0
+              ],
+              "force_assembly_error": 5.2026179974298885e-15,
+              "moment_assembly_error": 1.2696706528327248e-15,
+              "moment_scale_Nmm": 32982.00266812189
+            },
+            "result": {
+              "area_mean_loaded_displacement_mm": [
+                0.0010778051607023761,
+                -3.2066160759773828e-09,
+                -0.0073396330223070485
+              ],
+              "maximum_nodal_displacement_mm": 0.015064617434630242,
+              "support_reaction_N": [
+                -4.776895385916191e-07,
+                -4.505199898696688e-07,
+                295.0000031892389
+              ],
+              "support_moment_Nmm": [
+                7375.000106389751,
+                -15487.500038934928,
+                -0.00010677174895334929
+              ]
+            },
+            "stress": {
+              "maximum_absolute_principal_elastic_strain": 5.2583646759071105e-05,
+              "location": "integration_point",
+              "components": "sxx syy szz sxy sxz syz",
+              "raw_peak_von_mises_MPa": 10.633886081882347,
+              "peak_element_id": 33656,
+              "peak_integration_point": 2,
+              "roi_rms_von_mises_MPa": 1.666532144605758,
+              "roi_elements": 3165,
+              "roi_volume_mm3": 4800.0,
+              "roi_bounds_xy_mm": [
+                44.0,
+                60.0,
+                10.0,
+                40.0
+              ]
+            },
+            "checks": {
+              "force_balance": true,
+              "moment_balance": true,
+              "complete_displacements_reactions_stresses": true,
+              "no_unreviewed_solver_warnings": true,
+              "cad_mesh_volume": true,
+              "cad_load_area": true,
+              "analytic_cad_volume": true
+            },
+            "force_residual_relative": 1.103773841271015e-08,
+            "moment_residual_relative": 4.720019011660312e-09,
+            "solver": {
+              "version": "2.21",
+              "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+              "command": [
+                "/usr/bin/ccx",
+                "analysis"
+              ],
+              "elapsed_seconds": 33.091662425999985
+            },
+            "warnings": [],
+            "artifacts": {
+              "analysis-policy.json": "1cd3b2844f081b27371b067792b817447a69fbaacd1e0561419515b2abe785dc",
+              "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+              "analysis.dat": "ffc21fa85fc09029f9f8d76d63367d9b109a009d17a7c44a6a67c762dfa0ec87",
+              "analysis.frd": "265f610cf00cc9bae65c4558f0d1a120a45fa02976b48036195d4c351bbbc2dc",
+              "analysis.inp": "b5dcef73fea1fd75ced2694076d2748adf7cb7ba08cbe9cb3019be3c6162b0b7",
+              "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+              "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "solver.stdout.txt": "7aa417d37969e218477c2ba0fd87147e30bc1a15bfdf44c8a41d33a5d8005212",
+              "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+            },
+            "cad_mesh_volume_error": 0.00027779961426594514,
+            "cad_load_area_error": 1.6536267304962336e-16,
+            "mass_kg": 0.5292020246949591,
+            "applicability_screen": {
+              "max_displacement_over_thickness": 0.0015064617434630242,
+              "passed": true,
+              "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+            },
+            "source_hashes": {
+              "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+              "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+              "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+              "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+              "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+              "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+              "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+              "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+            },
+            "input_sha256": "32824685d8609cff1be58e3c1a895300946c51bc7996c72b0bf5be4607c62685"
+          }
+        ]
+      }
+    }
+  ]
+}

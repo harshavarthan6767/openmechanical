@@ -1,0 +1,11 @@
+{
+  "total_force_N": 295.0,
+  "source": "resultant of supplied baseline traction and face area",
+  "thicknesses_mm": [
+    6.0,
+    8.0,
+    10.0
+  ],
+  "load_policy": "constant total force; candidate traction deliberately adjusted to its area",
+  "assessment": "no winning design without supplied criteria and whole-part assessment"
+}

@@ -1,0 +1,8 @@
+{
+  "thickness_candidates": [
+    {"value": 6, "unit": "mm"},
+    {"value": 8, "unit": "mm"},
+    {"value": 10, "unit": "mm"}
+  ],
+  "note": "Geometry and mesh preparation only. These candidates do not imply that any design meets strength or displacement criteria."
+}

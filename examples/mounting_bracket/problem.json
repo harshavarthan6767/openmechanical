@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "name": "filleted mounting bracket mesh preparation example",
+  "analysis": "linear_static",
+  "geometry": {
+    "kind": "mounting_bracket",
+    "base_length": {"value": 80, "unit": "mm"},
+    "width": {"value": 50, "unit": "mm"},
+    "height": {"value": 60, "unit": "mm"},
+    "thickness": {"value": 6, "unit": "mm"},
+    "root_radius": {"value": 15, "unit": "mm"}
+  },
+  "material": {
+    "name": "illustrative steel; verify grade and properties before any design assessment",
+    "youngs_modulus": {"value": 210, "unit": "GPa"},
+    "poisson_ratio": 0.3,
+    "density": {"value": 7850, "unit": "kg/m^3"}
+  },
+  "loads": [
+    {
+      "kind": "traction",
+      "region": "loaded_pad",
+      "magnitude": {"value": 0.1, "unit": "MPa"},
+      "direction": [0, 0, -1]
+    }
+  ],
+  "constraints": [
+    {"kind": "fixed", "region": "mount_face"}
+  ],
+  "mesh": {
+    "element_order": 2,
+    "size": {"value": 4, "unit": "mm"},
+    "minimum_minsicn": 0.01
+  }
+}

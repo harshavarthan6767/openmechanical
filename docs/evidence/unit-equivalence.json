@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": {
+    "area_mean_loaded_displacement_mm": true,
+    "maximum_nodal_displacement_mm": true,
+    "roi_rms_von_mises_MPa": true,
+    "raw_peak_von_mises_MPa": true,
+    "force_resultant": true,
+    "mesh_counts": true,
+    "solver_checks": true
+  },
+  "baseline_result_sha256": "2398e03748d06d9669bf1a622fc1a5a7c3d898178ab7e23e0cb45e304fef1386",
+  "SI_input_sha256": "298f448d4ccfa166633d711860307e1e9860159c0a4c268c51588c415ee387be",
+  "metric_relative_tolerance": 1e-06,
+  "metric_absolute_tolerance": 1e-10
+}

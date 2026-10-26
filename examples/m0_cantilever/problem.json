@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "name": "linear steel cantilever integration proof",
+  "analysis": "linear_static",
+  "geometry": {
+    "kind": "box",
+    "length": {"value": 200, "unit": "mm"},
+    "width": {"value": 20, "unit": "mm"},
+    "height": {"value": 10, "unit": "mm"}
+  },
+  "material": {
+    "name": "illustrative isotropic steel",
+    "youngs_modulus": {"value": 210, "unit": "GPa"},
+    "poisson_ratio": 0.3,
+    "density": {"value": 7850, "unit": "kg/m^3"}
+  },
+  "loads": [
+    {
+      "kind": "traction",
+      "region": "loaded_end",
+      "magnitude": {"value": 0.5, "unit": "MPa"},
+      "direction": [0, 0, -1]
+    }
+  ],
+  "constraints": [
+    {"kind": "fixed", "region": "fixed_end"}
+  ],
+  "mesh": {
+    "element_order": 2,
+    "size": {"value": 5, "unit": "mm"}
+  }
+}

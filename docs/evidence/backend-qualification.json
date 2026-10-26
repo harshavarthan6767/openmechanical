@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "supported C3D10 adapter numerical qualification; not physical validation",
+  "cases": [
+    {
+      "case": "axial",
+      "status": "passed",
+      "full_field_displacement_error_relative": 1.0497383411138866e-07,
+      "full_field_stress_tensor_error_relative": 9.808194797364037e-14,
+      "tip_displacement_reference_mm": 0.0004761904761904762,
+      "force_residual_relative": 1.0000000258976676e-08,
+      "moment_residual_relative": 2.500815344964703e-10
+    },
+    {
+      "case": "rotated_axial",
+      "status": "passed",
+      "full_field_displacement_error_relative": 1.4445809134080735e-07,
+      "full_field_stress_tensor_error_relative": 9.810778067730939e-08,
+      "tip_displacement_reference_mm": 0.0004761904761904762,
+      "force_residual_relative": 3.1075706226563624e-08,
+      "moment_residual_relative": 3.17889515389697e-09
+    },
+    {
+      "case": "double_load",
+      "status": "passed",
+      "full_field_displacement_error_relative": 5.243018926664525e-08,
+      "full_field_stress_tensor_error_relative": 1.4771276267080514e-13,
+      "tip_displacement_reference_mm": 0.0009523809523809524,
+      "force_residual_relative": 1.0000000258976529e-08,
+      "moment_residual_relative": 7.121438747203852e-10
+    },
+    {
+      "case": "bending",
+      "reference_mm": 0.7633904761904762,
+      "relative_error": 0.008186237472077841,
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+name: Numerical verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linux-solver:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.12'
+      - name: System solver and graphics runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y calculix-ccx libgl1 libglu1-mesa
+      - name: Locked Python environment
+        run: |
+          python -m pip install uv==0.13.0
+          uv sync --locked --extra dev
+      - name: Require the qualified solver version
+        run: |
+          uv run --no-sync python -c "import subprocess; p=subprocess.run(['ccx','-v'],capture_output=True,text=True); assert 'This is Version 2.21' in p.stdout+p.stderr"
+      - name: Regression tests and lint
+        run: |
+          uv run --no-sync ruff check src tests examples
+          uv run --no-sync pytest -q
+      - name: Independent numerical benchmarks
+        run: uv run --no-sync python examples/qualify_backend.py --out runs/ci-backend
+      - name: Three-thickness bracket verification
+        run: uv run --no-sync openmechanical compare examples/mounting_bracket/problem.json --thickness-mm 6 8 10 --out runs/ci-brackets --json
+      - name: Build distribution
+        run: |
+          uv build
+          uv run --no-sync python examples/check_distribution.py
+      - name: SI and mm/MPa end-to-end equivalence
+        run: uv run --no-sync python examples/check_unit_equivalence.py --baseline runs/ci-brackets/candidate-0/mesh-0 --out runs/ci-unit-equivalence
+      - uses: actions/upload-artifact@v4.6.2
+        if: always()
+        with:
+          name: numerical-evidence
+          path: |
+            runs/
+            dist/
+          retention-days: 14

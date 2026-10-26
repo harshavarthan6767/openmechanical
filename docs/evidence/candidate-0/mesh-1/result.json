@@ -1,0 +1,121 @@
+{
+  "execution_status": "completed",
+  "numerical_status": "incomplete",
+  "design_status": "unassessed",
+  "physical_validation": "not_performed",
+  "mesh": {
+    "nodes": 19512,
+    "elements": 10903,
+    "minimum_minsicn": 0.31089777385181244,
+    "minimum_jacobian_determinant": 4.382008644133471,
+    "jacobian_method": "Gmsh adaptive minDetJac on quadratic geometry"
+  },
+  "load": {
+    "area_mm2": 2949.999999999997,
+    "centroid_mm": [
+      50.500000000000156,
+      25.000000000000057,
+      6.000000000000012
+    ],
+    "force_N": [
+      0.0,
+      0.0,
+      -294.9999999999997
+    ],
+    "moment_Nmm": [
+      -7375.00000000001,
+      14897.500000000031,
+      0.0
+    ],
+    "force_assembly_error": 1.3488268882225643e-15,
+    "moment_assembly_error": 1.2393638821540847e-15,
+    "moment_scale_Nmm": 32982.002668121866
+  },
+  "result": {
+    "area_mean_loaded_displacement_mm": [
+      0.0028923590801926595,
+      -1.3461168665337299e-09,
+      -0.031051598353463675
+    ],
+    "maximum_nodal_displacement_mm": 0.06749617691551149,
+    "support_reaction_N": [
+      -5.5019239608711246e-08,
+      2.3668787885178233e-07,
+      295.0000043226457
+    ],
+    "support_moment_Nmm": [
+      7375.000089048687,
+      -14897.500006722308,
+      0.00023642039378302115
+    ]
+  },
+  "stress": {
+    "maximum_absolute_principal_elastic_strain": 0.00012909008169953006,
+    "location": "integration_point",
+    "components": "sxx syy szz sxy sxz syz",
+    "raw_peak_von_mises_MPa": 26.567598306879475,
+    "peak_element_id": 11943,
+    "peak_integration_point": 2,
+    "roi_rms_von_mises_MPa": 4.112110287853173,
+    "roi_elements": 896,
+    "roi_volume_mm3": 2880.0,
+    "roi_bounds_xy_mm": [
+      44.0,
+      60.0,
+      10.0,
+      40.0
+    ]
+  },
+  "checks": {
+    "force_balance": true,
+    "moment_balance": true,
+    "complete_displacements_reactions_stresses": true,
+    "no_unreviewed_solver_warnings": true,
+    "cad_mesh_volume": true,
+    "cad_load_area": true,
+    "analytic_cad_volume": true
+  },
+  "force_residual_relative": 1.4676171807742638e-08,
+  "moment_residual_relative": 7.662484246217166e-09,
+  "solver": {
+    "version": "2.21",
+    "binary_sha256": "6adaabf5bf0382fc2bfd692b984320ed375dba777f7dc8297562f818043faa1b",
+    "command": [
+      "/usr/bin/ccx",
+      "analysis"
+    ],
+    "elapsed_seconds": 5.748673724999998
+  },
+  "warnings": [],
+  "artifacts": {
+    "analysis-policy.json": "d4e3a62f2ae6cc93698d839d296a7da4f0d95358c826223a4b27538bdc185171",
+    "analysis.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analysis.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+    "analysis.dat": "cdb6116a485032d7213d453ca635d97d7ca320b28b6fe3c95343f3016f802f78",
+    "analysis.frd": "c1351f95274904786b063ca1c1cec0c3f0bd749f2457243d7faff3a3cfedf80a",
+    "analysis.inp": "0ef3ade4289e73b8117a3cdcd18c5f8b4bb3788ef2fb345b92bde7f233c2baf5",
+    "analysis.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+    "solver.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver.stdout.txt": "afc2df0a87663af80ff559d33cdb820c4f1e2781be93b87e1d8a8917716514ec",
+    "spooles.out": "bedddf5984cf0f318d2b23cf53cf6bdec6111fc8ab6e5d8e04f044785239d510"
+  },
+  "cad_mesh_volume_error": 0.000850135949293148,
+  "cad_load_area_error": 1.0790615105780504e-15,
+  "mass_kg": 0.3345220246949585,
+  "applicability_screen": {
+    "max_displacement_over_thickness": 0.011249362819251915,
+    "passed": true,
+    "meaning": "kinematic screening only; does not establish elastic strength or physical validity"
+  },
+  "source_hashes": {
+    "bracket.py": "1d116d3f3018a72b97f70c1cdf0a9d34cbbd849ddeef74a25e903240b7b7a238",
+    "cantilever.py": "11d786927fc4c80a931a17032d9391ed3e736e2f720e42ba2ab52e57580d5ca6",
+    "cli.py": "77b40968172bb2c0578ba03bc706946b0d71e8ada7afda61ec920cad4d9b9d4d",
+    "contracts.py": "e50ee63447ff843c1868261a0d94d0d100bacc79ff2270fbb6c9fa94b83db71d",
+    "solver.py": "fa3d18bbf723bdc5663be1831567118c0a8f3683f4ced88382cf05643f99275a",
+    "units.py": "9e915c4772a2667408d2b2fd77524e933a11fcd5967da19bf72df0f40418ce5e",
+    "verification.py": "fe93d3c191db91b8c1ce5a41f91c03ac589f43942677f84a42db310767b07eb7",
+    "__init__.py": "6286bb0eaca2dd269d96c8d4e973bdd4382b23ae858ba176265e7e54bcb144b0"
+  },
+  "input_sha256": "56b7c251929f6eb761bc0063c3c1e4d1694a49ef0194fe40cd601dc910a79b61"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mechanical FEA"
+  short_description: "Run verified bracket and cantilever FEA workflows"
+  default_prompt: "Use $mechanical-fea to run the supported bracket verification workflow and explain the actual solver evidence."
