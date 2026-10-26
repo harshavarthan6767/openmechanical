@@ -73,9 +73,12 @@ Inspect the [published evidence](docs/evidence/README.md), [sample HTML report](
 
 The raw global peak near the ideal clamp increases with refinement and remains unqualified. The fixed regular-region RMS does not replace whole-part strength assessment. No winning thickness or design-safety claim is produced.
 
-## Related study
+## Related studies
 
-[NASA backward-facing-step CFD reproduction](studies/nasa-tmr-backstep-cfd/README.md) contains an OpenFOAM Foundation v14 case and an archived coarse baseline. The mesh-quality check and mass-balance pilot check passed, but residual convergence did not; its reattachment estimate also falls outside NASA's reported experimental interval. The study is explicitly incomplete and makes no validation claim. It is separate from the supported CAD-to-FEA CLI above.
+- [NASA backward-facing-step CFD reproduction](studies/nasa-tmr-backstep-cfd/README.md) contains an OpenFOAM Foundation v14 case and an archived coarse baseline. The mesh-quality check and mass-balance pilot check passed, but residual convergence did not; its reattachment estimate also falls outside NASA's reported experimental interval. The study is incomplete and makes no validation claim.
+- [Mesh-quality response pilot](studies/mesh-evidence-benchmark/README.md) reports 30 controlled cantilever mesh attempts. Twenty-nine samples passed equilibrium and one mesh was invalid. It does not recommend a minSICN cutoff: the tested probes reject some response-accurate meshes, and no over-limit response was observed to test false-safe detection.
+
+Both are research studies separate from the supported CAD-to-FEA CLI above.
 
 ## Verify the installation
 

@@ -1,0 +1,74 @@
+{
+  "base_mesh_inputs": [
+    {
+      "elements_c3d10": 2003,
+      "path": "data/base-meshes/cantilever-5.0mm.msh",
+      "sha256": "932a32c519cafb63e72b3d71ea9119268ecb4a7c1dfbab42a016b417f81c6866"
+    },
+    {
+      "elements_c3d10": 5195,
+      "path": "data/base-meshes/cantilever-3.535533906mm.msh",
+      "sha256": "bf8cd69de1b0b6fb6b79fed82a5503786696257b5cf5518c4a2e89a5668ea651"
+    },
+    {
+      "elements_c3d10": 12990,
+      "path": "data/base-meshes/cantilever-2.5mm.msh",
+      "sha256": "96abc80839cd01e5edee46db9a6070237228e572704c76a0a9593f404dd8115b"
+    }
+  ],
+  "case": {
+    "element_family": "C3D10",
+    "geometry_mm": {
+      "height": 10.0,
+      "length": 200.0,
+      "width": 20.0
+    },
+    "poisson_ratio": 0.3,
+    "reference": "Timoshenko beam estimate",
+    "reference_tip_deflection_mm": 0.7633904761904763,
+    "total_end_load_N": [
+      0,
+      0,
+      -100.0
+    ],
+    "youngs_modulus_MPa": 210000.0
+  },
+  "distortion_amplitudes_fraction_h": [
+    0.0,
+    0.0025,
+    0.005,
+    0.01
+  ],
+  "distortion_scope": "move only Gmsh nodes classified on the solid volume; preserve CAD-boundary nodes",
+  "expected_sample_count": 30,
+  "mesh_sizes_mm": [
+    5.0,
+    3.5355339059327373,
+    2.5
+  ],
+  "metric_threshold_probes": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_metric": "Gmsh minSICN minimum",
+  "response_error_definition": "abs(FEA - Timoshenko) / abs(Timoshenko)",
+  "response_error_limit": 0.02,
+  "schema": "mesh-response-benchmark.protocol/0.1",
+  "secondary_metrics": [
+    "Gmsh minSJ",
+    "Gmsh minDetJac"
+  ],
+  "seeds_for_nonzero_amplitudes": [
+    11,
+    23,
+    37
+  ],
+  "thresholds_are_project_probes_not_industry_standards": true,
+  "toolchain": {
+    "gmsh": "4.12.1",
+    "numpy": "1.26.4",
+    "solver": "CalculiX",
+    "solver_version": "This is Version 2.21"
+  }
+}
