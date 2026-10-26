@@ -2,6 +2,8 @@
 
 [![Numerical verification](https://github.com/harshavarthan6767/openmechanical/actions/workflows/verification.yml/badge.svg)](https://github.com/harshavarthan6767/openmechanical/actions/workflows/verification.yml)
 
+[Download the v0.1.0 preview](https://github.com/harshavarthan6767/openmechanical/releases/tag/v0.1.0) · [Install and use](docs/installation.md) · [Agent skill](skills/mechanical-fea/SKILL.md)
+
 **An agent skill and reproducible CAD-to-FEA tools for cantilever and mounting-bracket verification.** Generate CAD with CadQuery, mesh it with Gmsh, run CalculiX, and retain the evidence behind every result. The CLI works without an LLM API key.
 
 Status: **scoped engineering verification preview**. Numerical verification is implemented for the documented templates; production design approval remains unassessed. Read the [measured scope and limitations](docs/professional-readiness.md).
